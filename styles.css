@@ -262,11 +262,21 @@ strong {
   line-height: 1.5;
   font-style: italic;
   font-weight: 400;
-  margin: 0 0 var(--space-lg);
+  margin: 0 0 var(--space-sm);
   padding-left: var(--space-md);
   border-left: 2px solid var(--color-highlight);
   opacity: 0.92;
   max-width: 36rem;
+}
+
+.hero-audience {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  margin: 0 0 var(--space-lg);
+  max-width: 34rem;
+  padding-left: calc(var(--space-md) + 2px);
 }
 
 .hero-intro {
@@ -666,6 +676,26 @@ strong {
   font-style: italic;
 }
 
+.cta-contact {
+  margin-top: var(--space-sm);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--color-text-light);
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-contact a {
+  color: var(--color-text-muted);
+  text-decoration-color: rgba(79, 75, 70, 0.35);
+}
+
+.cta-contact a:hover {
+  color: var(--color-highlight);
+}
+
 /* --- Footer --- */
 .footer {
   padding: var(--space-lg) 0 calc(var(--space-lg) + env(safe-area-inset-bottom, 0));
@@ -749,6 +779,11 @@ strong {
   .hero-subtitle {
     padding-left: var(--space-sm);
     font-size: 1.125rem;
+  }
+
+  .hero-audience {
+    padding-left: var(--space-sm);
+    font-size: 0.875rem;
   }
 
   .book-card:hover {
